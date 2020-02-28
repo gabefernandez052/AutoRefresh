@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Auto Refresh v.1.2
+        </title>
+    </head>
+    <body>
+        <h1 style="margin: 0px">Auto Refresh v.1.2</h1>
+
+        <p style="margin: 5px">Please input time in seconds:
+            <input id="timerInterval"/>
+        </p>
+        <button id="stopButton">Stop</button>
+        <button id="refreshButton">Refresh</button>
+
+        <style>
+            html,body{
+                font-family: "Open-Sans",sans-serif;
+                font-size: 14px;
+                padding: 0;
+                width: 260px;
+                background: #e0e0eb;
+            }
+
+            #stopButton {
+                float:right;
+                margin-right: 16px;
+                margin-bottom: 5px;
+             }
+
+            #refreshButton {
+                float:right;
+                margin-right:10px;
+                margin-bottom: 5px;
+            }
+
+            #timerInterval {
+                width:50px;
+                background: #efeff5;
+            }
+        </style>
+        <script src="popup.js" type="text/javascript"></script>
+    </body>
+</html>

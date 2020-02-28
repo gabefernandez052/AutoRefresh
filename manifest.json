@@ -1,0 +1,22 @@
+{
+    "name": "Auto Refresh v1.0",
+    "version": "1.0",
+    "description": "Auto Refresh Browser",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_title":"Auto Refresh v.1.0",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+          "matches": [
+            "http://tntproviders.onecallcm.com/VendorConfirm/*", 
+            "https://tntproviders.onecallcm.com/VendorConfirm/*"
+          ],
+          "js": [
+            "content.js"
+          ]
+        }
+      ],
+    "permissions": ["<all_urls>"]
+  }
